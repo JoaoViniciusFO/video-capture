@@ -1,0 +1,25 @@
+<html>
+
+<head>
+    <script src="web-cam.js"></script>
+</head>
+<style>
+    .overlay-video {
+        position: absolute;
+        float: left;
+        z-index: 300000;
+    }
+
+    video {
+        transform: scaleX(-1);
+    }
+</style>
+
+<body>
+    <div class="overlay-video">
+        <img src="layer-photo.png">
+    </div>
+    <video autoplay id="video" width="260" height="195"></video>
+</body>
+
+</html>
